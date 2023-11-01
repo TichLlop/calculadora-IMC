@@ -1,0 +1,7 @@
+body {
+    background-image: url('fondo-abstracto-textura_1258-30484\ .png'); 
+    background-size: cover;  
+    background-repeat: no-repeat; 
+  }
+
+  img {float: center; width: 350px; height: 350px; margin-right: auto;}

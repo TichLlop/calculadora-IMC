@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en"><!-- es el lenguaje de la paguina -->
+<head><!-- es la cabeza de la paguina -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css"><!-- sirve para llamar el css -->
+    <title>Calculadora de IMC- Michel Lozada</title><!-- sirve para poner titulo a la paguina  -->
+    
+</head>
+<body><!-- es el cuerpo de la paguina -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <h1><!-- es para poner un titulo en el cuerpo  -->
+    Calculadora IMC 
+  </h1>
+  <br><!-- sirve para poner un espacio entre elementos -->
+  <div class="accordion" id="accordionPanelsStayOpenExample"><!-- es un elemento de intefaz llamado acordeón -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne"><!-- sirve para escribir el titulo del acordon  -->
+          Importancia del IMC
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+        <!-- sive para escribir dentro del acordeon -->
+        <div class="accordion-body">
+          <strong>Mantener el peso  apropiado es esencial para una vida saludable y el Índice de Masa Corporal (IMC) es un indicador que se encarga de calcular el porcentaje de grasa corporal que hay en nuestro cuerpo, según los parámetros de la Organización Mundial de la Salud (OMS).
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          Como se calcula 
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>Fórmula: peso (kg) / [estatura (m)]2
+
+            Con el sistema métrico, la fórmula para el IMC es el peso en kilogramos dividido por la estatura en metros cuadrados. Debido a que la estatura por lo general se mide en centímetros, divida la estatura en centímetros por 100 para obtener la estatura en metros.
+            
+            Ejemplo: Peso = 68 kg, Estatura = 165 cm (1.65 m)
+            Cálculo: 68 ÷ (1.65)2 = 24.98
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          Tendencias
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          <strong>Sin embargo, las intervenciones y las políticas no han sido capaces de detener el aumento de índice de masa corporal. Si las tendencias posteriores al año 2000 siguen, 18% de los hombres y 21% de las mujeres será obeso y la probabilidad de cumplir con la meta mundial de la obesidad en 2025 será prácticamente imposible.
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <div class="text-center"> <!-- sirve para centrar una imagen  -->
+    <img src="peso.png" class="rounded" alt="..."><!-- sirve para llamar una imagen  -->
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="text-center">
+    <img src="peso 2.png" class="rounded" alt="...">
+  </div>
+    <br>
+      <br>
+        <br>
+          <br>
+            <br>
+              <br>
+                <br>
+    <form id="imcForm">
+      <label for="peso">Peso (kg):</label>
+      <input type="number" id="peso" step="0.01" required><br>
+<br>
+      <label for="altura">Altura (m):</label>
+      <input type="number" id="altura" step="0.01" required><br>
+<br>
+      <button type="button" class="btn btn-primary"onclick="calcularIMC()">Calcular IMC</button>
+      
+  </form>
+<br>
+
+  <div id="resultado"></div>
+<br>
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Webgrafia 
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        <p><a class="https://clinictech.es/endo/es/actualidad/por-que-es-importante-el-imc.html" href="https://clinictech.es/endo/es/actualidad/por-que-es-importante-el-imc.html">https://clinictech.es/endo/es/actualidad/por-que-es-importante-el-imc.html</a></p>
+        <br>
+        <p><a class="https://www.cdc.gov/healthyweight/spanish/assessing/bmi/adult_bmi/index.html" href="https://www.cdc.gov/healthyweight/spanish/assessing/bmi/adult_bmi/index.html">https://www.cdc.gov/healthyweight/spanish/assessing/bmi/adult_bmi/index.html</a></p>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
